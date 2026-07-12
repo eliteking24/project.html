@@ -1,109 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduManage | Student Management System</title>
+    <title>Student Management System | Home</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
 </head>
+
 <body>
-
-    <header>
-        <nav class="container">
-            <div class="logo">EduManage</div>
-           <ul class="nav-links">
-
-<li><a href="index.html">Home</a></li>
-
-<li><a href="login.html">Login</a></li>
-
-<li><a href="signup.html" class="signup-btn">Signup</a></li>
-
-<li><a href="contact.html">Contact</a></li>
-
-
-</ul>
-        </nav>
-    </header>
-
-    <section class="hero container">
-        <div class="hero-content">
-            <h1>Smart student data <span>management.</span></h1>
-            <p>Track, manage, and analyze student records with a simplified, intuitive tool designed for modern institutions.</p>
-            <div class="hero-btns">
-                <a href="signup.html" class="btn-primary">Get Started Now</a>
-                <a href="#" class="btn-secondary">Explore Features</a>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">EduManage</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                <a href="contact.html">Contact</a>
             </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-         <div class="img_div">
-       <img src="./hero.png" alt="">
-       </div>
-       
-    </section>
+    </nav>
 
-    <section class="why-choose container">
-        <h2>Why choose EduManage?</h2>
-        <p class="subtitle">The ultimate learning project for modern web developers.</p>
-        
-        <div class="feature-row">
-            <div class="feature-text">
-                <h3>Efficient records at your fingertips.</h3>
-                <p>Create, edit, and manage student data in seconds. Our single-page architecture ensures you see updates in real-time without refreshing.</p>
-            </div>
-            <div class="feature-box blue-box">Modern UI Focus</div>
-        </div>
-
-        <div class="feature-row reverse">
-            <div class="feature-text">
-                <h3>Built for learning.</h3>
-                <p>EduManage is crafted to help beginners master fundamental frontend skills like CSS Flexbox, semantic HTML, and dynamic DOM manipulation.</p>
-             <div class="hero-btns">
-                <a href="signup.html" class="btn-primary">Start building</a>
-                
-            </div>
-
-
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Smart student data <span>management.</span></h1>
+                    <p>Track, manage, and analyze student records with a simplified, intuitive tool designed for modern institutions.</p>
+                    <div class="hero-actions">
+                        <a href="signup.html" class="btn btn-primary">Get Started Now</a>
+                        <a href="#features" class="btn btn-outline">Explore Features</a>
                     </div>
+                </div>
+                <div class="hero-image">
+                    <img src="hero.png" alt="EduManage Dashboard Preview">
+                </div>
+            </div>
+        </section>
 
-                    
-            <div class="feature-box green-box">Developer Experience</div>
-        </div>
-    </section>
+        <section id="features" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="section-title">Why choose EduManage?</h2>
+                    <p>The ultimate learning project for modern web developers.</p>
+                </div>
+
+                <div class="flex-row feature-spacing">
+                    <div class="flex-col">
+                        <h3 class="section-title">Efficient records at your fingertips.</h3>
+                        <p class="section-text">Create, edit, and manage student data in seconds. Our single-page architecture ensures you see updates in real-time without refreshing.</p>
+                        <ul class="check-list">
+                            <li><span>✓</span> Rapid data entry</li>
+                            <li><span>✓</span> Instant table updates</li>
+                            <li><span>✓</span> Clean, searchable interface</li>
+                        </ul>
+                    </div>
+                    <div class="flex-col">
+                        <div class="placeholder-img blue-gradient">Modern UI Focus</div>
+                    </div>
+                </div>
+
+                <div class="flex-row reverse">
+                    <div class="flex-col">
+                        <h3 class="section-title">Built for learning.</h3>
+                        <p class="section-text">EduManage is crafted to help beginners master fundamental frontend skills like CSS Flexbox, semantic HTML, and dynamic DOM manipulation.</p>
+                        <a href="signup.html" class="btn btn-primary">Start Building</a>
+                    </div>
+                    <div class="flex-col">
+                        <div class="placeholder-img green-gradient">Developer Experience</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <h3>EduManage</h3>
-                <p>Streamlining academic data with professional design and developer-friendly code.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">EduManage</div>
+                    <p>Streamlining academic data with professional design and developer-friendly code.</p>
+                </div>
+                <div class="footer-columns">
+                    <div>
+                        <h4>NAVIGATION</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="signup.html">Signup</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>RESOURCES</h4>
+                        <ul>
+                            <li>Tutorial</li>
+                            <li>Documentation</li>
+                            <li>Help Center</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="footer-links">
-                <h4>NAVIGATION</h4>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-
-                <li><a href="login.html">Login</a></li>
-
-                <li><a href="signup.html">Signup</a></li>
-
-                 <li><a href="#contact">Contact</a></li> 
-
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>RESOURCES</h4>
-                <ul>
-                    <li>Tutorial</li>
-                    <li>Documentation</li>
-                    <li>Help Center</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 EduManage SMS. Simplified with excellence.</p>
+            <div class="footer-bottom">&copy; 2026 EduManage SMS. Simplified with excellence.</div>
         </div>
     </footer>
 
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
