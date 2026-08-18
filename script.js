@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const signupForm = document.getElementById('signupForm');
     const loginForm = document.getElementById('loginForm');
-    const contactForm = document.getElementById('contactForm');
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
 
@@ -22,15 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
             event.preventDefault();
             alert('Login Successful! Redirecting to home...');
             window.location.href = 'index.html';
-        });
-    }
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', (event) => {
-            event.preventDefault();
-            const name = document.getElementById('contactName').value;
-            alert(`Thank you, ${name}! Your message has been sent. We'll get back to you soon.`);
-            contactForm.reset();
         });
     }
 
